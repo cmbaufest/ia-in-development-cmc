@@ -79,6 +79,14 @@ http://localhost:8000/docs
 
 ---
 
+## Variables de entorno
+
+| Variable | Descripción | Valor por defecto |
+|---|---|---|
+| `SECRET_KEY` | Clave secreta para firmar los JWT. **Cámbiala en producción.** | `supersecretkey_change_in_production` |
+
+---
+
 ## Ejecución con Docker (recomendado)
 
 ### Requisitos previos
