@@ -1,0 +1,10 @@
+services:
+  backend:
+    build: .
+    container_name: jwt_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SECRET_KEY=${SECRET_KEY:-supersecretkey_change_in_production}
+    restart: unless-stopped
